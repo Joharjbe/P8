@@ -106,6 +106,14 @@ The user can interact with this biderectional conexion by this two functions:
 
 As you know our project pretends to help the user to find a place to visit in Peru, and this in vivo funtion helps to make an itinerary for lots of places, which the user had just click a second ago. (Demo in vevo)
 
+```
+#Llamar al dashboard e interactuar con clicks en puntos de interés
+ click_df  = print_click_summary()
+#Obtener itinerario en vivo
+ show_click_timecurve(click_df)
+
+```
+
 #### Complementary information
 ```
 show_transport_access(
