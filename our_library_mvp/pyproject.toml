@@ -1,0 +1,46 @@
+[build-system]
+
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+# ------------------------ Metadatos del proyecto ------------------------
+[project]
+# nombre
+name = "our-library-mvp"
+# version
+version = "8.0.0"
+
+description = "MVP: visualización interactiva de grafos en notebook (D3 + puente Py↔JS)"
+
+readme = "README.md"
+
+requires-python = ">=3.10"
+
+license = { text = "MIT" }
+
+authors = [
+  { name = "Ellen", email = "ellen.pruijn@utec.edu.pe" },
+  { name = "Johar", email = "johar.barzola@utec.edu.pe" }
+]
+
+# Dependencias 
+dependencies = [
+  "ipython>=8",
+  "ipywidgets>=8",
+  "flask>=2"        
+]
+
+
+# ------------------ Config para layout basado en `src/` ------------------
+[tool.hatch.build.targets.wheel]
+# Le decimos a hatchling dónde está el código del paquete
+packages = ["src/our_library"]
+
+[tool.hatch.build]
+# Importante: incluye también los .py además del JS estático
+include = [
+  "src/our_library/**/*.py",
+  #"src/our_library/graph2.py",
+  "src/our_library/_static/d3.v7.min.js",
+  "README.md"
+]
