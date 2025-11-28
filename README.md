@@ -38,6 +38,11 @@ mapify/
 ```
 
 It is important that the machine-learning model files are placed inside the _models_ folder.
+## 1.2 Requirements
+It is also crucial to have installed the requirements our library needs to be compilated and created, we recommend to have al this dependencias in a virtual environment, so you can install them all easily, for practicity call in venv.
+
+## 1.3 Compilation of the library
+As our_library contains lost of functions and we want the user to interact with it as any other library by just calling it thorugh a .py file. We need to compile our_library which basicly depends on two files: init.py and a pyprojecct.toml, after having those files updated you can run a build through the terminal and final have created a .whl file to install in yor Google Colab file.
 
 ### 2. Basic code
 
@@ -91,6 +96,15 @@ This visualisation displays the similar locations on a map. When selecting point
 
 _Selection_  
 Locations selected in any visualisation will appear in the _Selection_ view. This part of the dashboard contains links to more information about these locations.
+
+#### JS and Python Connection
+
+As this project was required we implement a funtional conexion between javascrips, were all the d3 logic relays, and python.
+The user can interact with this biderectional conexion by this two functions: 
+* def show_click_summary()
+* def show_click_timecurve()
+
+As you know our project pretends to help the user to find a place to visit in Peru, and this in vivo funtion helps to make an itinerary for lots of places, which the user had just click a second ago. (Demo in vevo)
 
 #### Complementary information
 ```
