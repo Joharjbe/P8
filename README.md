@@ -1,9 +1,21 @@
-# mapify
-README
+# Mapify
 
+Mapify is a Python library for exploring Peruvian travel destinations through interactive, linked visualisations. It combines geospatial analytics, machine learning recommendations, dashboards, and seasonal data exploration to help users discover new places with confidence.
+
+---
 
 ## Overview
-Mapify is a library for building a user interface that can be used to explore new places to travel to. It displays Peruvian city-level data. Data is visualised geospatially and the library uses machine learning to recommend similar locations to travel to. All visualisations are interactive and the visualisations are linked. This means that when you click on one visualisation, another visualisation reacts accordingly.
+
+Mapify provides:
+
+- Interactive **city-level Peruvian data** visualised geospatially.
+- A **machine learning recommendation engine** to suggest similar destinations.
+- Fully **linked visualisations**: clicking one graph highlights relevant elements on the others.
+- Dashboards covering tourism similarity, transport access, crime trends, and temperature seasonality.
+
+You can run Mapify in **Google Colab** or in any Python environment (Jupyter, VSCode, local machine).
+
+---
 
 ## How to use
 You can run the code directly from Google Colab, or from another Python environment. The examples below show how to run the dashboards in Google Colab. 
